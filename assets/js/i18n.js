@@ -33,6 +33,8 @@ window.I18N = {
     "about.bullet2": "Безкоштовна перша консультація 30 хв",
     "about.bullet3": "Договір з фіксованою відповідальністю",
     "about.bullet4": "Підтримка 24/7 для стратегічних клієнтів",
+    "about.captionEst": "EST. 2018",
+    "about.captionCity": "КИЇВ · УКРАЇНА",
 
     "services.kicker": "— Послуги",
     "services.titleLine1": "Дев'ять напрямів,",
@@ -211,6 +213,8 @@ window.I18N = {
     "about.bullet2": "Бесплатная первая консультация 30 мин",
     "about.bullet3": "Договор с фиксированной ответственностью",
     "about.bullet4": "Поддержка 24/7 для стратегических клиентов",
+    "about.captionEst": "EST. 2018",
+    "about.captionCity": "КИЕВ · УКРАИНА",
 
     "services.kicker": "— Услуги",
     "services.titleLine1": "Девять направлений,",
@@ -389,6 +393,8 @@ window.I18N = {
     "about.bullet2": "Free 30-minute first consultation",
     "about.bullet3": "Contract with fixed accountability",
     "about.bullet4": "24/7 support for retainer clients",
+    "about.captionEst": "EST. 2018",
+    "about.captionCity": "KYIV · UKRAINE",
 
     "services.kicker": "— Services",
     "services.titleLine1": "Nine practices,",

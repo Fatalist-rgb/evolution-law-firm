@@ -677,34 +677,76 @@ textarea {
 }
 .about__media {
   position: relative;
-  aspect-ratio: 1 / 1;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
 }
-.about__logo-stage {
+.about__frame {
   position: relative;
-  width: 80%;
-  aspect-ratio: 1 / 1;
-  display: grid;
-  place-items: center;
-}
-.about__logo {
-  position: relative;
-  z-index: 2;
   width: 100%;
-  filter: drop-shadow(0 30px 60px rgba(0,0,0,.7));
-  border-radius: 50%;
+  max-width: 560px;
+  margin: 0;
+  padding: 14px;
+  background: var(--c-bg-deep);
+  border: 1px solid rgba(212, 164, 55, 0.4);
+  box-shadow:
+    0 40px 100px -28px rgba(0, 0, 0, 0.75),
+    0 0 60px -20px rgba(212, 164, 55, 0.18);
+  isolation: isolate;
+  overflow: hidden;
+  transition: transform .8s var(--ease-out), box-shadow .8s var(--ease-out);
 }
-.about__halo {
+.about__frame::before {
+  content: "";
   position: absolute;
-  inset: -4%;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(212,164,55,.18) 0%, transparent 70%);
-  animation: halo 8s ease-in-out infinite;
+  inset: 6px;
+  border: 1px solid rgba(212, 164, 55, 0.2);
+  pointer-events: none;
+  z-index: 2;
 }
-@keyframes halo {
-  0%, 100% { transform: scale(1); opacity: .8; }
-  50% { transform: scale(1.06); opacity: 1; }
+.about__frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(212, 164, 55, 0.06), transparent 45%);
+  pointer-events: none;
+  mix-blend-mode: screen;
+  z-index: 3;
+}
+.about__frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 1.4s var(--ease-out);
+}
+.about__frame:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 50px 110px -28px rgba(0, 0, 0, 0.8),
+    0 0 80px -16px rgba(212, 164, 55, 0.28);
+}
+.about__frame:hover img {
+  transform: scale(1.04);
+}
+.about__caption {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family: var(--f-sans);
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--c-gold);
+}
+.about__caption-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--c-gold);
+  display: inline-block;
+  flex-shrink: 0;
 }
 
 .about__content {
