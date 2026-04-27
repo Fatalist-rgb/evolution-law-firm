@@ -89,11 +89,6 @@
       <div class="hero__veil" aria-hidden="true"></div>
 
       <div class="container hero__inner">
-        <div class="hero__eyebrow">
-          <span class="dot"></span>
-          <span data-i18n="hero.eyebrow">Юридична фірма нового покоління · Київ · з 2018</span>
-        </div>
-
         <h1 class="hero__title">
           <span class="reveal" data-i18n="hero.titleLine1">Evolution</span>
           <span class="reveal hero__title-italic" data-i18n="hero.titleLine2">Law Firm</span>
@@ -394,6 +389,26 @@
       </div>
     </section>
 
+    <!-- ============== MANIFESTO ============== -->
+    <section class="manifesto" aria-labelledby="manifesto-title">
+      <div class="manifesto__media" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=2000&h=1200&fit=crop&q=85&fm=webp&auto=format" alt="" width="2000" height="1200" loading="lazy" />
+        <div class="manifesto__veil"></div>
+      </div>
+      <div class="container manifesto__inner">
+        <span class="section__kicker" data-i18n="manifesto.kicker">— Філософія</span>
+        <h2 class="section__title" id="manifesto-title">
+          <span data-i18n="manifesto.titleLine1">Закон — це система.</span>
+          <em data-i18n="manifesto.titleLine2">Право — це принцип.</em>
+        </h2>
+        <p class="manifesto__lead" data-i18n="manifesto.lead">Ми працюємо там, де перетинаються букви закону та реальні інтереси людини. Не «вигравати справу за будь-яку ціну» — а захистити те, заради чого ви прийшли. Спокійно. Послідовно. До результату.</p>
+        <div class="manifesto__sign">
+          <span class="manifesto__sign-line"></span>
+          <span class="manifesto__sign-text" data-i18n="manifesto.sign">Команда Evolution Law Firm</span>
+        </div>
+      </div>
+    </section>
+
     <!-- ============== TEAM ============== -->
     <section class="section team" id="team">
       <div class="container">
@@ -407,25 +422,37 @@
 
         <div class="team__grid">
           <article class="member">
-            <div class="member__avatar"><span>ОЄ</span></div>
+            <figure class="member__photo">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=720&h=900&fit=crop&q=80&fm=webp&auto=format" alt="Олександр Євтушенко" width="720" height="900" loading="lazy" />
+              <span class="member__monogram">ОЄ</span>
+            </figure>
             <h3 class="member__name" data-i18n="team.m1.name">Олександр Євтушенко</h3>
             <p class="member__role" data-i18n="team.m1.role">Керуючий партнер · 15 років досвіду</p>
             <p class="member__quote" data-i18n="team.m1.quote">«Ми не торгуємо консультаціями. Ми продаємо результат, виміряний у грошах та свободі клієнта.»</p>
           </article>
           <article class="member">
-            <div class="member__avatar"><span>МК</span></div>
+            <figure class="member__photo">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=720&h=900&fit=crop&q=80&fm=webp&auto=format" alt="Марія Коваленко" width="720" height="900" loading="lazy" />
+              <span class="member__monogram">МК</span>
+            </figure>
             <h3 class="member__name" data-i18n="team.m2.name">Марія Коваленко</h3>
             <p class="member__role" data-i18n="team.m2.role">Старший партнер · корпоративне право</p>
             <p class="member__quote" data-i18n="team.m2.quote">«Хороший договір — це той, який не доводиться читати після підписання. Ми пишемо саме такі.»</p>
           </article>
           <article class="member">
-            <div class="member__avatar"><span>ДШ</span></div>
+            <figure class="member__photo">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=720&h=900&fit=crop&q=80&fm=webp&auto=format" alt="Дмитро Шевчук" width="720" height="900" loading="lazy" />
+              <span class="member__monogram">ДШ</span>
+            </figure>
             <h3 class="member__name" data-i18n="team.m3.name">Дмитро Шевчук</h3>
             <p class="member__role" data-i18n="team.m3.role">Адвокат · кримінальні справи</p>
             <p class="member__quote" data-i18n="team.m3.quote">«У кримінальних справах виграє той, хто почав готуватись першим. Тому я завжди на крок попереду.»</p>
           </article>
           <article class="member">
-            <div class="member__avatar"><span>АП</span></div>
+            <figure class="member__photo">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=720&h=900&fit=crop&q=80&fm=webp&auto=format" alt="Анна Петренко" width="720" height="900" loading="lazy" />
+              <span class="member__monogram">АП</span>
+            </figure>
             <h3 class="member__name" data-i18n="team.m4.name">Анна Петренко</h3>
             <p class="member__role" data-i18n="team.m4.role">Юрист · сімейне та цивільне право</p>
             <p class="member__quote" data-i18n="team.m4.quote">«За кожним документом стоїть людина. Я завжди пам'ятаю, що мова — про чиєсь життя.»</p>
@@ -447,32 +474,47 @@
 
         <div class="cases__grid">
           <article class="case">
-            <div class="case__tag" data-i18n="cases.c1.tag">Корпоративний спір</div>
-            <h3 class="case__title" data-i18n="cases.c1.title">Повернення активів на 12 млн ₴</h3>
-            <p class="case__desc" data-i18n="cases.c1.desc">Підготували позов проти колишнього партнера, що вивів активи через ланцюг компаній. Виграли в трьох інстанціях.</p>
-            <div class="case__metric">
-              <strong>12M ₴</strong>
-              <span data-i18n="cases.c1.metric">повернено клієнту</span>
+            <div class="case__media">
+              <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900&h=560&fit=crop&q=80&fm=webp&auto=format" alt="" width="900" height="560" loading="lazy" />
+              <div class="case__tag" data-i18n="cases.c1.tag">Корпоративний спір</div>
+            </div>
+            <div class="case__body">
+              <h3 class="case__title" data-i18n="cases.c1.title">Повернення активів на 12 млн ₴</h3>
+              <p class="case__desc" data-i18n="cases.c1.desc">Підготували позов проти колишнього партнера, що вивів активи через ланцюг компаній. Виграли в трьох інстанціях.</p>
+              <div class="case__metric">
+                <strong>12M ₴</strong>
+                <span data-i18n="cases.c1.metric">повернено клієнту</span>
+              </div>
             </div>
           </article>
 
           <article class="case">
-            <div class="case__tag" data-i18n="cases.c2.tag">Податковий спір</div>
-            <h3 class="case__title" data-i18n="cases.c2.title">Скасування ППР на 4,7 млн ₴</h3>
-            <p class="case__desc" data-i18n="cases.c2.desc">Оскаржили податкове повідомлення-рішення з безпідставним донарахуванням ПДВ. Виграли без оплати штрафу.</p>
-            <div class="case__metric">
-              <strong>4.7M ₴</strong>
-              <span data-i18n="cases.c2.metric">скасовано донарахувань</span>
+            <div class="case__media">
+              <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&h=560&fit=crop&q=80&fm=webp&auto=format" alt="" width="900" height="560" loading="lazy" />
+              <div class="case__tag" data-i18n="cases.c2.tag">Податковий спір</div>
+            </div>
+            <div class="case__body">
+              <h3 class="case__title" data-i18n="cases.c2.title">Скасування ППР на 4,7 млн ₴</h3>
+              <p class="case__desc" data-i18n="cases.c2.desc">Оскаржили податкове повідомлення-рішення з безпідставним донарахуванням ПДВ. Виграли без оплати штрафу.</p>
+              <div class="case__metric">
+                <strong>4.7M ₴</strong>
+                <span data-i18n="cases.c2.metric">скасовано донарахувань</span>
+              </div>
             </div>
           </article>
 
           <article class="case">
-            <div class="case__tag" data-i18n="cases.c3.tag">Кримінальна справа</div>
-            <h3 class="case__title" data-i18n="cases.c3.title">Закриття справи на стадії ДС</h3>
-            <p class="case__desc" data-i18n="cases.c3.desc">Захист топ-менеджера у справі за ст.191 ККУ. Доказова база була сформована частково — досягли закриття до суду.</p>
-            <div class="case__metric">
-              <strong>0</strong>
-              <span data-i18n="cases.c3.metric">обвинувальних вироків</span>
+            <div class="case__media">
+              <img src="https://images.unsplash.com/photo-1589994965851-a8f479c573a9?w=900&h=560&fit=crop&q=80&fm=webp&auto=format" alt="" width="900" height="560" loading="lazy" />
+              <div class="case__tag" data-i18n="cases.c3.tag">Кримінальна справа</div>
+            </div>
+            <div class="case__body">
+              <h3 class="case__title" data-i18n="cases.c3.title">Закриття справи на стадії ДС</h3>
+              <p class="case__desc" data-i18n="cases.c3.desc">Захист топ-менеджера у справі за ст.191 ККУ. Доказова база була сформована частково — досягли закриття до суду.</p>
+              <div class="case__metric">
+                <strong>0</strong>
+                <span data-i18n="cases.c3.metric">обвинувальних вироків</span>
+              </div>
             </div>
           </article>
         </div>

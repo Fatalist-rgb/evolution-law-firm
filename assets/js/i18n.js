@@ -81,6 +81,12 @@ window.I18N = {
     "process.p4.title": "Результат",
     "process.p4.desc": "Ведемо до перемоги. Звіт після кожного етапу. Підтримка ще 6 місяців після завершення.",
 
+    "manifesto.kicker": "— Філософія",
+    "manifesto.titleLine1": "Закон — це система.",
+    "manifesto.titleLine2": "Право — це принцип.",
+    "manifesto.lead": "Ми працюємо там, де перетинаються букви закону та реальні інтереси людини. Не «вигравати справу за будь-яку ціну» — а захистити те, заради чого ви прийшли. Спокійно. Послідовно. До результату.",
+    "manifesto.sign": "Команда Evolution Law Firm",
+
     "team.kicker": "— Команда",
     "team.titleLine1": "Юристи,",
     "team.titleLine2": "за яких ви впізнаєте справу",
@@ -253,6 +259,12 @@ window.I18N = {
     "process.p4.title": "Результат",
     "process.p4.desc": "Ведём к победе. Отчёт после каждого этапа. Поддержка ещё 6 месяцев после завершения.",
 
+    "manifesto.kicker": "— Философия",
+    "manifesto.titleLine1": "Закон — это система.",
+    "manifesto.titleLine2": "Право — это принцип.",
+    "manifesto.lead": "Мы работаем там, где буквы закона пересекаются с реальными интересами человека. Не «выиграть дело любой ценой» — а защитить то, ради чего вы пришли. Спокойно. Последовательно. До результата.",
+    "manifesto.sign": "Команда Evolution Law Firm",
+
     "team.kicker": "— Команда",
     "team.titleLine1": "Юристы,",
     "team.titleLine2": "которым вы доверите дело",
@@ -424,6 +436,12 @@ window.I18N = {
     "process.p3.desc": "Fixed fee, clear deadlines, team accountability. We sign and start.",
     "process.p4.title": "Result",
     "process.p4.desc": "We drive to victory. Reports after every stage. 6 months of post-case support.",
+
+    "manifesto.kicker": "— Philosophy",
+    "manifesto.titleLine1": "Law is a system.",
+    "manifesto.titleLine2": "Right is a principle.",
+    "manifesto.lead": "We work where the letter of the law meets the real interests of a human being. Not \"winning at any cost\" — but protecting what you actually came to defend. Calmly. Consistently. All the way to the result.",
+    "manifesto.sign": "Evolution Law Firm team",
 
     "team.kicker": "— Team",
     "team.titleLine1": "Lawyers",

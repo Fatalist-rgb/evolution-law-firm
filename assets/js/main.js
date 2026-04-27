@@ -428,6 +428,28 @@
       scrollTrigger: { trigger: '.contact__form', start: 'top 80%' },
     });
 
+    /* Manifesto */
+    gsap.from('.manifesto__lead, .manifesto__sign', {
+      opacity: 0,
+      y: 30,
+      duration: 1,
+      ease: 'power3.out',
+      stagger: 0.15,
+      scrollTrigger: { trigger: '.manifesto', start: 'top 70%' },
+    });
+    if (!reduced) {
+      gsap.to('.manifesto__media img', {
+        yPercent: 12,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: '.manifesto',
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: 0.6,
+        },
+      });
+    }
+
     /* Footer */
     gsap.from('.footer__brand, .footer__col', {
       opacity: 0,

@@ -11,3 +11,5 @@ Thumbs.db
 # Source logo files with cyrillic names (already copied to assets/img/)
 Лого*
 лого*
+
+.vercel
