@@ -1,0 +1,13 @@
+node_modules/
+.DS_Store
+Thumbs.db
+.vercel
+.env
+.env.local
+*.log
+.idea/
+.vscode/
+
+# Source logo files with cyrillic names (already copied to assets/img/)
+Лого*
+лого*

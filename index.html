@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+  <meta name="theme-color" content="#0A0A0A" />
+  <title data-i18n="meta.title">Evolution Law Firm — Реалізуй своє право</title>
+  <meta name="description" data-i18n="meta.description" content="Юридична фірма ELF — преміальні правові рішення для бізнесу та приватних клієнтів. Сімейне, корпоративне, кримінальне право." />
+
+  <link rel="icon" type="image/webp" href="assets/img/logo-circle.webp" />
+  <link rel="apple-touch-icon" href="assets/img/logo-circle.webp" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <svg class="preloader__logo" viewBox="0 0 200 200" fill="none">
+        <rect x="20" y="20" width="160" height="160" stroke="currentColor" stroke-width="2" />
+        <text x="100" y="115" text-anchor="middle" font-family="Cinzel" font-size="44" font-weight="600" fill="currentColor" letter-spacing="6">ELF</text>
+      </svg>
+      <div class="preloader__bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <div class="cursor__dot"></div>
+    <div class="cursor__circle"></div>
+  </div>
+
+  <!-- Decorative grain & vignette -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Header / Nav -->
+  <header class="nav" id="nav">
+    <div class="container nav__row">
+      <a class="nav__brand" href="#hero" aria-label="Evolution Law Firm">
+        <img src="assets/img/logo-circle.webp" alt="ELF" />
+        <span class="nav__brand-text">
+          <strong>Evolution</strong>
+          <em>Law Firm</em>
+        </span>
+      </a>
+
+      <nav class="nav__links" aria-label="primary">
+        <a href="#about" data-i18n="nav.about">Про нас</a>
+        <a href="#services" data-i18n="nav.services">Послуги</a>
+        <a href="#process" data-i18n="nav.process">Процес</a>
+        <a href="#team" data-i18n="nav.team">Команда</a>
+        <a href="#cases" data-i18n="nav.cases">Кейси</a>
+        <a href="#contact" data-i18n="nav.contact">Контакти</a>
+      </nav>
+
+      <div class="nav__right">
+        <div class="lang" id="lang">
+          <button class="lang__current" type="button" aria-haspopup="listbox" aria-expanded="false">
+            <span data-lang-current>UA</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <ul class="lang__list" role="listbox">
+            <li><button type="button" data-lang="uk">Українська</button></li>
+            <li><button type="button" data-lang="ru">Русский</button></li>
+            <li><button type="button" data-lang="en">English</button></li>
+          </ul>
+        </div>
+
+        <a href="#contact" class="btn btn--gold btn--sm magnetic" data-i18n="nav.cta">Консультація</a>
+
+        <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============== HERO ============== -->
+    <section class="hero" id="hero">
+      <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero__veil" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__eyebrow">
+          <span class="dot"></span>
+          <span data-i18n="hero.eyebrow">Юридична фірма нового покоління · Київ · з 2018</span>
+        </div>
+
+        <h1 class="hero__title">
+          <span class="reveal" data-i18n="hero.titleLine1">Evolution</span>
+          <span class="reveal hero__title-italic" data-i18n="hero.titleLine2">Law Firm</span>
+        </h1>
+
+        <p class="hero__slogan" data-i18n="hero.slogan">Реалізуй своє право</p>
+
+        <p class="hero__lead" data-i18n="hero.lead">Поєднуємо класичну юридичну експертизу з інструментами нового часу. Кожна справа — це еволюція досвіду, який працює на вас.</p>
+
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--gold magnetic" data-i18n="hero.cta1">Безкоштовна консультація</a>
+          <a href="#services" class="btn btn--ghost magnetic" data-i18n="hero.cta2">Наші послуги</a>
+        </div>
+
+        <div class="hero__meta">
+          <div class="hero__meta-item">
+            <strong data-counter="8">0</strong>
+            <span data-i18n="hero.meta1">років досвіду</span>
+          </div>
+          <div class="hero__meta-item">
+            <strong data-counter="1500" data-suffix="+">0</strong>
+            <span data-i18n="hero.meta2">виграних справ</span>
+          </div>
+          <div class="hero__meta-item">
+            <strong data-counter="98" data-suffix="%">0</strong>
+            <span data-i18n="hero.meta3">успішних рішень</span>
+          </div>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#about" aria-label="Scroll">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============== MARQUEE ============== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span data-i18n="marquee.text">Реалізуй своє право</span> <i>✦</i>
+        <span data-i18n="marquee.text">Реалізуй своє право</span> <i>✦</i>
+        <span data-i18n="marquee.text">Реалізуй своє право</span> <i>✦</i>
+        <span data-i18n="marquee.text">Реалізуй своє право</span> <i>✦</i>
+        <span data-i18n="marquee.text">Реалізуй своє право</span> <i>✦</i>
+        <span data-i18n="marquee.text">Реалізуй своє право</span> <i>✦</i>
+      </div>
+    </div>
+
+    <!-- ============== ABOUT ============== -->
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <div class="about__media">
+          <div class="about__logo-stage">
+            <img src="assets/img/logo-circle.webp" alt="ELF logo" class="about__logo" />
+            <div class="about__halo"></div>
+          </div>
+        </div>
+
+        <div class="about__content">
+          <div class="section__head">
+            <span class="section__kicker" data-i18n="about.kicker">— Про фірму</span>
+            <h2 class="section__title">
+              <span data-i18n="about.titleLine1">Класична експертиза.</span>
+              <em data-i18n="about.titleLine2">Сучасний підхід.</em>
+            </h2>
+          </div>
+
+          <p class="about__text" data-i18n="about.p1">Evolution Law Firm — це команда юристів, які допомагають клієнтам реалізовувати свої права у бізнесі та повсякденному житті. Ми працюємо там, де закон зустрічається з реальністю — у переговорах, судах, угодах та регуляторних спорах.</p>
+          <p class="about__text" data-i18n="about.p2">Кожен наш кейс — це довірливе партнерство. Ми не просто консультуємо, а супроводжуємо клієнта від першого дзвінка до остаточного результату.</p>
+
+          <ul class="about__bullets">
+            <li><span data-i18n="about.bullet1">Прозорі гонорари без прихованих платежів</span></li>
+            <li><span data-i18n="about.bullet2">Безкоштовна перша консультація 30 хв</span></li>
+            <li><span data-i18n="about.bullet3">Договір з фіксованою відповідальністю</span></li>
+            <li><span data-i18n="about.bullet4">Підтримка 24/7 для стратегічних клієнтів</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== SERVICES ============== -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="section__kicker" data-i18n="services.kicker">— Послуги</span>
+          <h2 class="section__title">
+            <span data-i18n="services.titleLine1">Дев'ять напрямів,</span>
+            <em data-i18n="services.titleLine2">одна стратегія результату</em>
+          </h2>
+        </div>
+
+        <div class="services__grid">
+
+          <article class="service" data-service="01">
+            <span class="service__num">01</span>
+            <div class="service__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M24 28c4 0 7-3 7-7s-3-7-7-7-7 3-7 7 3 7 7 7Z"/>
+                <path d="M12 40c0-6 5-10 12-10s12 4 12 10"/>
+                <path d="M16 14c2 0 4-2 4-4M32 14c-2 0-4-2-4-4"/>
+              </svg>
+            </div>
+            <h3 class="service__title" data-i18n="services.s1.title">Сімейне право</h3>
+            <p class="service__desc" data-i18n="services.s1.desc">Розлучення, поділ майна, аліменти, визначення місця проживання дитини, спори про опіку.</p>
+            <span class="service__more" data-i18n="services.more">Дізнатися більше →</span>
+          </article>
+
+          <article class="service" data-service="02">
+            <span class="service__num">02</span>
+            <div class="service__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 40V14l14-6 14 6v26"/>
+                <path d="M10 40h28"/>
+                <path d="M18 24h4M26 24h4M18 32h4M26 32h4"/>
+              </svg>
+            </div>
+            <h3 class="service__title" data-i18n="services.s2.title">Корпоративне право</h3>
+            <p class="service__desc" data-i18n="services.s2.desc">Реєстрація компаній, M&A, корпоративні угоди, due diligence, реструктуризація бізнесу.</p>
+            <span class="service__more" data-i18n="services.more">Дізнатися більше →</span>
+          </article>
+
+          <article class="service" data-service="03">
+            <span class="service__num">03</span>
+            <div class="service__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M24 6l16 6v10c0 11-7 17-16 20-9-3-16-9-16-20V12l16-6Z"/>
+                <path d="M18 24l4 4 8-8"/>
+              </svg>
+            </div>
+            <h3 class="service__title" data-i18n="services.s3.title">Кримінальне право</h3>
+            <p class="service__desc" data-i18n="services.s3.desc">Захист на досудовому слідстві та в суді. Економічні злочини, ДТП, корупційні справи.</p>
+            <span class="service__more" data-i18n="services.more">Дізнатися більше →</span>
+          </article>
+
+          <article class="service" data-service="04">
+            <span class="service__num">04</span>
+            <div class="service__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M24 6v8M24 14l-8 14h16L24 14Z"/>
+                <path d="M16 28a8 4 0 0 0 0 6M32 28a8 4 0 0 0 0 6"/>
+                <path d="M14 40h20"/>
+                <path d="M24 14v26"/>
+              </svg>
+            </div>
+            <h3 class="service__title" data-i18n="services.s4.title">Цивільне право</h3>
+            <p class="service__desc" data-i18n="services.s4.desc">Договірні спори, відшкодування збитків, представництво в судах усіх інстанцій.</p>
+            <span class="service__more" data-i18n="services.more">Дізнатися більше →</span>
+          </article>
+
+          <article class="service" data-service="05">
+            <span class="service__num">05</span>
+            <div class="service__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 24l16-14 16 14v18H8V24Z"/>
+                <path d="M20 42v-12h8v12"/>
+                <circle cx="34" cy="26" r="2"/>
+              </svg>
+            </div>
+            <h3 class="service__title" data-i18n="services.s5.title">Нерухомість</h3>
+            <p class="service__desc" data-i18n="services.s5.desc">Супровід угод, перевірка титулу, оренда, спори з забудовниками, оформлення землі.</p>
+            <span class="service__more" data-i18n="services.more">Дізнатися більше →</span>
+          </article>
+
+          <article class="service" data-service="06">
+            <span class="service__num">06</span>
+            <div class="service__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="24" cy="24" r="18"/>
+                <path d="M6 24h36M24 6c5 5 8 11 8 18s-3 13-8 18c-5-5-8-11-8-18s3-13 8-18Z"/>
+              </svg>
+            </div>
+            <h3 class="service__title" data-i18n="services.s6.title">Міграційне право</h3>
+            <p class="service__desc" data-i18n="services.s6.desc">Посвідки на проживання, громадянство, дозволи на роботу, легалізація іноземців.</p>
+            <span class="service__more" data-i18n="services.more">Дізнатися більше →</span>
+          </article>
+
+          <article class="service" data-service="07">
+            <span class="service__num">07</span>
+            <div class="service__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="8" y="14" width="32" height="26" rx="2"/>
+                <path d="M18 14V8h12v6"/>
+                <path d="M8 24h32"/>
+              </svg>
+            </div>
+            <h3 class="service__title" data-i18n="services.s7.title">Трудове право</h3>
+            <p class="service__desc" data-i18n="services.s7.desc">Незаконні звільнення, трудові спори, конфлікти з роботодавцем, поновлення на роботі.</p>
+            <span class="service__more" data-i18n="services.more">Дізнатися більше →</span>
+          </article>
+
+          <article class="service" data-service="08">
+            <span class="service__num">08</span>
+            <div class="service__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M24 6c-7 0-12 5-12 12 0 5 3 8 5 11v6h14v-6c2-3 5-6 5-11 0-7-5-12-12-12Z"/>
+                <path d="M19 39h10M21 42h6"/>
+              </svg>
+            </div>
+            <h3 class="service__title" data-i18n="services.s8.title">Інтелектуальна власність</h3>
+            <p class="service__desc" data-i18n="services.s8.desc">Реєстрація торгових марок, патентів, авторського права. Захист бренду в суді.</p>
+            <span class="service__more" data-i18n="services.more">Дізнатися більше →</span>
+          </article>
+
+          <article class="service" data-service="09">
+            <span class="service__num">09</span>
+            <div class="service__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="10" y="6" width="28" height="36" rx="2"/>
+                <path d="M16 14h16M16 22h16M16 30h10"/>
+                <path d="M30 38l4-4M34 38l-4-4"/>
+              </svg>
+            </div>
+            <h3 class="service__title" data-i18n="services.s9.title">Податкове право</h3>
+            <p class="service__desc" data-i18n="services.s9.desc">Податкові спори з ДПС, оскарження ППР, податковий консалтинг для бізнесу.</p>
+            <span class="service__more" data-i18n="services.more">Дізнатися більше →</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== WHY US ============== -->
+    <section class="section why">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="section__kicker" data-i18n="why.kicker">— Чому ELF</span>
+          <h2 class="section__title">
+            <span data-i18n="why.titleLine1">Чотири причини,</span>
+            <em data-i18n="why.titleLine2">які вирішують</em>
+          </h2>
+        </div>
+
+        <div class="why__grid">
+          <div class="why__item">
+            <span class="why__num">01</span>
+            <h3 data-i18n="why.i1.title">Прозорість</h3>
+            <p data-i18n="why.i1.desc">Фіксована вартість послуг ще до укладення договору. Жодних «несподіванок» у рахунку.</p>
+          </div>
+          <div class="why__item">
+            <span class="why__num">02</span>
+            <h3 data-i18n="why.i2.title">Швидкість</h3>
+            <p data-i18n="why.i2.desc">Перший контакт протягом 30 хвилин. Старт роботи — у день звернення для термінових справ.</p>
+          </div>
+          <div class="why__item">
+            <span class="why__num">03</span>
+            <h3 data-i18n="why.i3.title">Глибина</h3>
+            <p data-i18n="why.i3.desc">Кожен кейс веде команда з 2-3 юристів та галузевого експерта. Без поверхневих рішень.</p>
+          </div>
+          <div class="why__item">
+            <span class="why__num">04</span>
+            <h3 data-i18n="why.i4.title">Конфіденційність</h3>
+            <p data-i18n="why.i4.desc">NDA за замовчуванням. Захищені канали зв'язку. Доступ до справи лише у профільної команди.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== PROCESS ============== -->
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="section__kicker" data-i18n="process.kicker">— Як ми працюємо</span>
+          <h2 class="section__title">
+            <span data-i18n="process.titleLine1">Чотири кроки —</span>
+            <em data-i18n="process.titleLine2">від запиту до перемоги</em>
+          </h2>
+        </div>
+
+        <ol class="process__list">
+          <li class="process__step">
+            <div class="process__step-num">01</div>
+            <div class="process__step-body">
+              <h3 data-i18n="process.p1.title">Заявка</h3>
+              <p data-i18n="process.p1.desc">Залишаєте контакти у формі або пишете в месенджер. Ми розберемось протягом 30 хвилин.</p>
+            </div>
+          </li>
+          <li class="process__step">
+            <div class="process__step-num">02</div>
+            <div class="process__step-body">
+              <h3 data-i18n="process.p2.title">Консультація</h3>
+              <p data-i18n="process.p2.desc">30 хвилин безкоштовно. Аналізуємо ситуацію, окреслюємо ризики, формулюємо стратегію.</p>
+            </div>
+          </li>
+          <li class="process__step">
+            <div class="process__step-num">03</div>
+            <div class="process__step-body">
+              <h3 data-i18n="process.p3.title">Договір</h3>
+              <p data-i18n="process.p3.desc">Фіксований гонорар, чіткі терміни, відповідальність команди. Підписуємо й починаємо.</p>
+            </div>
+          </li>
+          <li class="process__step">
+            <div class="process__step-num">04</div>
+            <div class="process__step-body">
+              <h3 data-i18n="process.p4.title">Результат</h3>
+              <p data-i18n="process.p4.desc">Ведемо до перемоги. Звіт після кожного етапу. Підтримка ще 6 місяців після завершення.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============== TEAM ============== -->
+    <section class="section team" id="team">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="section__kicker" data-i18n="team.kicker">— Команда</span>
+          <h2 class="section__title">
+            <span data-i18n="team.titleLine1">Юристи,</span>
+            <em data-i18n="team.titleLine2">за яких ви впізнаєте справу</em>
+          </h2>
+        </div>
+
+        <div class="team__grid">
+          <article class="member">
+            <div class="member__avatar"><span>ОЄ</span></div>
+            <h3 class="member__name" data-i18n="team.m1.name">Олександр Євтушенко</h3>
+            <p class="member__role" data-i18n="team.m1.role">Керуючий партнер · 15 років досвіду</p>
+            <p class="member__quote" data-i18n="team.m1.quote">«Ми не торгуємо консультаціями. Ми продаємо результат, виміряний у грошах та свободі клієнта.»</p>
+          </article>
+          <article class="member">
+            <div class="member__avatar"><span>МК</span></div>
+            <h3 class="member__name" data-i18n="team.m2.name">Марія Коваленко</h3>
+            <p class="member__role" data-i18n="team.m2.role">Старший партнер · корпоративне право</p>
+            <p class="member__quote" data-i18n="team.m2.quote">«Хороший договір — це той, який не доводиться читати після підписання. Ми пишемо саме такі.»</p>
+          </article>
+          <article class="member">
+            <div class="member__avatar"><span>ДШ</span></div>
+            <h3 class="member__name" data-i18n="team.m3.name">Дмитро Шевчук</h3>
+            <p class="member__role" data-i18n="team.m3.role">Адвокат · кримінальні справи</p>
+            <p class="member__quote" data-i18n="team.m3.quote">«У кримінальних справах виграє той, хто почав готуватись першим. Тому я завжди на крок попереду.»</p>
+          </article>
+          <article class="member">
+            <div class="member__avatar"><span>АП</span></div>
+            <h3 class="member__name" data-i18n="team.m4.name">Анна Петренко</h3>
+            <p class="member__role" data-i18n="team.m4.role">Юрист · сімейне та цивільне право</p>
+            <p class="member__quote" data-i18n="team.m4.quote">«За кожним документом стоїть людина. Я завжди пам'ятаю, що мова — про чиєсь життя.»</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== CASES ============== -->
+    <section class="section cases" id="cases">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="section__kicker" data-i18n="cases.kicker">— Кейси</span>
+          <h2 class="section__title">
+            <span data-i18n="cases.titleLine1">Конкретні справи —</span>
+            <em data-i18n="cases.titleLine2">конкретний результат</em>
+          </h2>
+        </div>
+
+        <div class="cases__grid">
+          <article class="case">
+            <div class="case__tag" data-i18n="cases.c1.tag">Корпоративний спір</div>
+            <h3 class="case__title" data-i18n="cases.c1.title">Повернення активів на 12 млн ₴</h3>
+            <p class="case__desc" data-i18n="cases.c1.desc">Підготували позов проти колишнього партнера, що вивів активи через ланцюг компаній. Виграли в трьох інстанціях.</p>
+            <div class="case__metric">
+              <strong>12M ₴</strong>
+              <span data-i18n="cases.c1.metric">повернено клієнту</span>
+            </div>
+          </article>
+
+          <article class="case">
+            <div class="case__tag" data-i18n="cases.c2.tag">Податковий спір</div>
+            <h3 class="case__title" data-i18n="cases.c2.title">Скасування ППР на 4,7 млн ₴</h3>
+            <p class="case__desc" data-i18n="cases.c2.desc">Оскаржили податкове повідомлення-рішення з безпідставним донарахуванням ПДВ. Виграли без оплати штрафу.</p>
+            <div class="case__metric">
+              <strong>4.7M ₴</strong>
+              <span data-i18n="cases.c2.metric">скасовано донарахувань</span>
+            </div>
+          </article>
+
+          <article class="case">
+            <div class="case__tag" data-i18n="cases.c3.tag">Кримінальна справа</div>
+            <h3 class="case__title" data-i18n="cases.c3.title">Закриття справи на стадії ДС</h3>
+            <p class="case__desc" data-i18n="cases.c3.desc">Захист топ-менеджера у справі за ст.191 ККУ. Доказова база була сформована частково — досягли закриття до суду.</p>
+            <div class="case__metric">
+              <strong>0</strong>
+              <span data-i18n="cases.c3.metric">обвинувальних вироків</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== TESTIMONIALS ============== -->
+    <section class="section reviews">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="section__kicker" data-i18n="reviews.kicker">— Відгуки</span>
+          <h2 class="section__title">
+            <span data-i18n="reviews.titleLine1">Слова</span>
+            <em data-i18n="reviews.titleLine2">наших клієнтів</em>
+          </h2>
+        </div>
+
+        <div class="reviews__grid">
+          <figure class="review">
+            <div class="review__quote">“</div>
+            <blockquote data-i18n="reviews.r1.text">ELF супроводжував угоду з продажу частки в IT-компанії. Тонкі моменти про non-compete та earn-out були продумані за нас. Команда, яку хочеться рекомендувати.</blockquote>
+            <figcaption>
+              <strong data-i18n="reviews.r1.name">Іван Демчук</strong>
+              <span data-i18n="reviews.r1.role">CEO, SaaS-стартап</span>
+            </figcaption>
+          </figure>
+
+          <figure class="review">
+            <div class="review__quote">“</div>
+            <blockquote data-i18n="reviews.r2.text">Зверталась з сімейної справи — поділ майна після 12 років шлюбу. Працювали без зайвих емоцій, з чітким планом. Все вирішили без виходу в публічну площину.</blockquote>
+            <figcaption>
+              <strong data-i18n="reviews.r2.name">Олена Лисенко</strong>
+              <span data-i18n="reviews.r2.role">Приватний клієнт</span>
+            </figcaption>
+          </figure>
+
+          <figure class="review">
+            <div class="review__quote">“</div>
+            <blockquote data-i18n="reviews.r3.text">Виграли податковий спір там, де інша фірма вже здалась. Окрема подяка — за прогноз ризиків наперед. Тепер ELF — наш юридичний партнер за замовчуванням.</blockquote>
+            <figcaption>
+              <strong data-i18n="reviews.r3.name">Сергій Бондар</strong>
+              <span data-i18n="reviews.r3.role">CFO, виробнича компанія</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== FAQ ============== -->
+    <section class="section faq">
+      <div class="container faq__inner">
+        <div class="section__head">
+          <span class="section__kicker" data-i18n="faq.kicker">— FAQ</span>
+          <h2 class="section__title">
+            <span data-i18n="faq.titleLine1">Часті</span>
+            <em data-i18n="faq.titleLine2">питання</em>
+          </h2>
+        </div>
+
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary>
+              <span data-i18n="faq.q1.q">Скільки коштує перша консультація?</span>
+              <i></i>
+            </summary>
+            <p data-i18n="faq.q1.a">Перша консультація триває 30 хвилин і безкоштовна. За цей час ми розберемось у вашій ситуації, окреслимо стратегію і дамо чесну оцінку перспектив.</p>
+          </details>
+          <details class="faq__item">
+            <summary>
+              <span data-i18n="faq.q2.q">Як формується вартість послуг?</span>
+              <i></i>
+            </summary>
+            <p data-i18n="faq.q2.a">Ми працюємо за фіксованою вартістю або погодинно — залежно від типу справи. Усі цифри узгоджуються до підписання договору. Жодних прихованих платежів.</p>
+          </details>
+          <details class="faq__item">
+            <summary>
+              <span data-i18n="faq.q3.q">Чи працюєте онлайн?</span>
+              <i></i>
+            </summary>
+            <p data-i18n="faq.q3.a">Так. Більшість консультацій та документообіг ведуться через захищені канали (Signal, корпоративну пошту, КЕП). Особиста зустріч — за вашим бажанням.</p>
+          </details>
+          <details class="faq__item">
+            <summary>
+              <span data-i18n="faq.q4.q">З якими регіонами працюєте?</span>
+              <i></i>
+            </summary>
+            <p data-i18n="faq.q4.a">Україна та країни ЄС (Польща, Чехія, Німеччина — через партнерські фірми). Судові справи ведемо у судах усіх інстанцій по всій Україні.</p>
+          </details>
+          <details class="faq__item">
+            <summary>
+              <span data-i18n="faq.q5.q">Що, якщо я не задоволений результатом?</span>
+              <i></i>
+            </summary>
+            <p data-i18n="faq.q5.a">Договір передбачає чіткі критерії результату. Якщо вони не досягнуті з нашої вини — повернемо частину гонорару згідно з SLA. Це прописано в контракті, не на словах.</p>
+          </details>
+          <details class="faq__item">
+            <summary>
+              <span data-i18n="faq.q6.q">Як швидко ви відповідаєте?</span>
+              <i></i>
+            </summary>
+            <p data-i18n="faq.q6.a">У робочий час — до 30 хвилин. У вихідні — до 2 годин. Для клієнтів на абонементі діє підтримка 24/7.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== CONTACT ============== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="section__kicker" data-i18n="contact.kicker">— Контакти</span>
+          <h2 class="section__title">
+            <span data-i18n="contact.titleLine1">Чотири способи</span>
+            <em data-i18n="contact.titleLine2">почати співпрацю</em>
+          </h2>
+        </div>
+
+        <div class="contact__grid">
+          <a class="contact__channel" href="tel:+380441234567">
+            <div class="contact__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 8c-2 0-4 2-4 4 0 14 12 28 28 28 2 0 4-2 4-4v-5l-7-3-3 4c-5-2-9-6-11-11l4-3-3-7-8-3Z"/></svg>
+            </div>
+            <h3 data-i18n="contact.c1.title">Телефон</h3>
+            <p>+380 (44) 123-45-67</p>
+            <span class="contact__cta" data-i18n="contact.c1.cta">Зателефонувати</span>
+          </a>
+
+          <a class="contact__channel" href="https://t.me/elf_lawfirm" target="_blank" rel="noopener">
+            <div class="contact__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22l36-14-6 32-12-6-6 8-2-12 22-16-26 12Z"/></svg>
+            </div>
+            <h3>Telegram</h3>
+            <p>@elf_lawfirm</p>
+            <span class="contact__cta" data-i18n="contact.c2.cta">Написати в Telegram</span>
+          </a>
+
+          <a class="contact__channel" href="https://wa.me/380441234567" target="_blank" rel="noopener">
+            <div class="contact__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6c-10 0-18 8-18 18 0 4 1 8 3 11l-3 7 8-2c3 1 6 2 10 2 10 0 18-8 18-18S34 6 24 6Z"/><path d="M16 19c0-2 2-4 4-4l2 5-2 2c1 3 4 6 7 7l2-2 5 2c0 2-2 4-4 4-7 0-14-7-14-14Z"/></svg>
+            </div>
+            <h3>WhatsApp</h3>
+            <p>+380 (44) 123-45-67</p>
+            <span class="contact__cta" data-i18n="contact.c3.cta">Написати в WhatsApp</span>
+          </a>
+
+          <a class="contact__channel" href="mailto:info@elf-law.ua">
+            <div class="contact__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="36" height="28" rx="2"/><path d="M6 14l18 13 18-13"/></svg>
+            </div>
+            <h3 data-i18n="contact.c4.title">E-mail</h3>
+            <p>info@elf-law.ua</p>
+            <span class="contact__cta" data-i18n="contact.c4.cta">Написати листа</span>
+          </a>
+        </div>
+
+        <form class="contact__form" id="contactForm" novalidate>
+          <h3 class="contact__form-title">
+            <span data-i18n="contact.form.title">Або залиште заявку —</span>
+            <em data-i18n="contact.form.subtitle">передзвонимо протягом 30 хвилин</em>
+          </h3>
+
+          <div class="contact__form-grid">
+            <label class="field">
+              <span data-i18n="contact.form.name">Ім'я</span>
+              <input type="text" name="name" required />
+            </label>
+            <label class="field">
+              <span data-i18n="contact.form.phone">Телефон</span>
+              <input type="tel" name="phone" required placeholder="+380" />
+            </label>
+            <label class="field field--full">
+              <span data-i18n="contact.form.message">Коротко про справу</span>
+              <textarea name="message" rows="3"></textarea>
+            </label>
+          </div>
+
+          <div class="contact__form-actions">
+            <button type="submit" class="btn btn--gold magnetic" data-i18n="contact.form.submit">Надіслати заявку</button>
+            <span class="contact__form-policy" data-i18n="contact.form.policy">Натискаючи кнопку, ви погоджуєтесь із обробкою персональних даних згідно з політикою конфіденційності.</span>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/img/logo-circle.webp" alt="ELF" />
+        <div>
+          <strong>Evolution Law Firm</strong>
+          <em data-i18n="footer.slogan">Реалізуй своє право</em>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4 data-i18n="footer.contacts">Контакти</h4>
+        <p>+380 (44) 123-45-67</p>
+        <p>info@elf-law.ua</p>
+        <p data-i18n="footer.address">м. Київ, вул. Хрещатик 22, оф. 405</p>
+      </div>
+
+      <div class="footer__col">
+        <h4 data-i18n="footer.hours">Години прийому</h4>
+        <p data-i18n="footer.hours1">Пн — Пт: 9:00 — 19:00</p>
+        <p data-i18n="footer.hours2">Сб: 10:00 — 14:00</p>
+        <p data-i18n="footer.hours3">Невідкладні справи — 24/7</p>
+      </div>
+
+      <div class="footer__col">
+        <h4 data-i18n="footer.social">Ми у соцмережах</h4>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="Telegram">Telegram</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span data-i18n="footer.copy">© 2026 Evolution Law Firm. Усі права захищені.</span>
+        <span><a href="#" data-i18n="footer.policy">Політика конфіденційності</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" aria-live="polite"></div>
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+
+  <!-- App -->
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
