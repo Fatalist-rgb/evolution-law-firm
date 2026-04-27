@@ -70,17 +70,29 @@
   function runPreloader() {
     const pre = $('#preloader');
     const bar = $('.preloader__bar span');
-    if (!pre || !bar) return;
+    if (!pre) return;
+    if (bar) requestAnimationFrame(() => { bar.style.width = '100%'; });
 
-    requestAnimationFrame(() => { bar.style.width = '100%'; });
-
-    window.addEventListener('load', () => {
+    let hidden = false;
+    const hide = () => {
+      if (hidden) return;
+      hidden = true;
+      pre.classList.add('preloader--hidden');
+      document.body.classList.add('is-ready');
       setTimeout(() => {
-        pre.classList.add('preloader--hidden');
-        document.body.classList.add('is-ready');
-        startHeroAnimation();
-      }, 650);
-    });
+        try { startHeroAnimation(); } catch (e) { console.error('hero anim', e); }
+      }, 80);
+    };
+
+    // Primary trigger — window 'load' (everything ready)
+    if (document.readyState === 'complete') {
+      setTimeout(hide, 450);
+    } else {
+      window.addEventListener('load', () => setTimeout(hide, 450), { once: true });
+    }
+
+    // Hard failsafe — never let the preloader linger past 3.5s
+    setTimeout(hide, 3500);
   }
 
   /* ============== LENIS SMOOTH SCROLL ============== */
@@ -459,17 +471,28 @@
   }
 
   /* ============== INIT ============== */
-  document.addEventListener('DOMContentLoaded', () => {
-    applyLang(detectLang());
-    bindLangSwitcher();
-    bindAnchors();
-    initStickyNav();
-    initLenis();
-    initCursor();
-    initMagnetic();
-    initHeroCanvas();
-    initScrollReveal();
-    initForm();
-    runPreloader();
-  });
+  function safe(name, fn) {
+    try { fn(); } catch (e) { console.error('[ELF]', name, e); }
+  }
+
+  function start() {
+    // Run preloader FIRST so the failsafe is armed even if init errors out.
+    safe('preloader',     runPreloader);
+    safe('i18n',          () => applyLang(detectLang()));
+    safe('langSwitcher',  bindLangSwitcher);
+    safe('anchors',       bindAnchors);
+    safe('stickyNav',     initStickyNav);
+    safe('lenis',         initLenis);
+    safe('cursor',        initCursor);
+    safe('magnetic',      initMagnetic);
+    safe('heroCanvas',    initHeroCanvas);
+    safe('scrollReveal',  initScrollReveal);
+    safe('form',          initForm);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', start, { once: true });
+  } else {
+    start();
+  }
 })();
