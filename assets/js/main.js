@@ -376,23 +376,6 @@
       });
     });
 
-    /* About */
-    gsap.from('.about__text, .about__bullets li', {
-      opacity: 0,
-      y: 30,
-      duration: 0.9,
-      stagger: 0.1,
-      ease: 'power3.out',
-      scrollTrigger: { trigger: '.about__content', start: 'top 75%' },
-    });
-    gsap.from('.about__media', {
-      opacity: 0,
-      scale: 0.9,
-      duration: 1.4,
-      ease: 'power3.out',
-      scrollTrigger: { trigger: '.about', start: 'top 75%' },
-    });
-
     /* Services — staggered grid reveal */
     fadeUp($$('.service'), {
       trigger: '.services__grid',

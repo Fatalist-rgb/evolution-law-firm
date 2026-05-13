@@ -22,7 +22,11 @@ window.I18N = {
     "hero.meta2": "виграних справ",
     "hero.meta3": "успішних рішень",
 
-    "marquee.text": "Реалізуй своє право",
+    "marquee.s1": "Реалізуй своє право",
+    "marquee.s2": "Закон. Стратегія. Результат",
+    "marquee.s3": "Захищаємо ваші інтереси",
+    "marquee.s4": "Право, що працює",
+    "marquee.s5": "Експертиза без компромісів",
 
     "about.kicker": "— Про фірму",
     "about.titleLine1": "Класична експертиза.",
@@ -202,7 +206,11 @@ window.I18N = {
     "hero.meta2": "выигранных дел",
     "hero.meta3": "успешных решений",
 
-    "marquee.text": "Реализуй своё право",
+    "marquee.s1": "Реализуй своё право",
+    "marquee.s2": "Закон. Стратегия. Результат",
+    "marquee.s3": "Защищаем ваши интересы",
+    "marquee.s4": "Право, что работает",
+    "marquee.s5": "Экспертиза без компромиссов",
 
     "about.kicker": "— О фирме",
     "about.titleLine1": "Классическая экспертиза.",
@@ -382,7 +390,11 @@ window.I18N = {
     "hero.meta2": "cases won",
     "hero.meta3": "successful outcomes",
 
-    "marquee.text": "Realize your right",
+    "marquee.s1": "Realize your right",
+    "marquee.s2": "Law. Strategy. Result",
+    "marquee.s3": "We protect your interests",
+    "marquee.s4": "Law that works",
+    "marquee.s5": "Expertise without compromise",
 
     "about.kicker": "— About the firm",
     "about.titleLine1": "Classical expertise.",
