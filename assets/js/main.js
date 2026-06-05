@@ -19,14 +19,11 @@
   function detectLang() {
     const stored = localStorage.getItem('elf_lang');
     if (stored && SUPPORTED.includes(stored)) return stored;
-    const nav = (navigator.language || 'uk').slice(0, 2).toLowerCase();
-    if (nav === 'uk') return 'uk';
-    if (nav === 'ru') return 'ru';
     return 'en';
   }
 
   function applyLang(lang) {
-    if (!SUPPORTED.includes(lang)) lang = 'uk';
+    if (!SUPPORTED.includes(lang)) lang = 'en';
     const dict = window.I18N[lang] || {};
     document.documentElement.setAttribute('lang', lang);
 
@@ -337,7 +334,7 @@
         const p = Math.min(1, (now - start) / duration);
         const eased = 1 - Math.pow(1 - p, 3);
         const val = Math.floor(target * eased);
-        el.textContent = val.toLocaleString('uk-UA') + suffix;
+        el.textContent = val.toLocaleString('en-US') + suffix;
         if (p < 1) requestAnimationFrame(tick);
       }
       requestAnimationFrame(tick);
@@ -466,7 +463,7 @@
 
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      const lang = localStorage.getItem('elf_lang') || 'uk';
+      const lang = localStorage.getItem('elf_lang') || 'en';
       const msg = (window.I18N[lang] && window.I18N[lang]['contact.form.success']) || 'Thank you!';
       toast.textContent = msg;
       toast.classList.add('toast--visible');
